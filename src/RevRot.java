@@ -26,7 +26,7 @@ public class RevRot {
         int sumCubes = 0;
 
         for (int i = 0; i < len; i++) {
-            sumCubes += (Integer.parseInt(chunk.substring(i, i + 1)) * Integer.parseInt(chunk.substring(i, i + 1)));
+            sumCubes += Math.pow(Integer.parseInt(chunk.substring(i, i + 1)), 2);
         }
 
         if (sumCubes % 2 == 0) {
